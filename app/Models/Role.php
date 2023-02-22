@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Role extends Model
 {
     use HasFactory;
+
+    public const IS_MANAGER = 1;
+    public const IS_EDITOR = 2;
+    public const IS_REVIEWER = 3;
+    public const IS_AUTHOR = 4;
+
+    
+    public function user()
+    {
+        return $this->hasMany(User::class);
+    }
 }
