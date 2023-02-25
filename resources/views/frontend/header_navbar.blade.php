@@ -24,7 +24,7 @@
               إضافة مجلة
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown"> --}}
-            <a class="nav-link" id="create_journal" href="{{url('/createJournal')}}"> إضافة مجلة</a>
+            <a class="nav-link" id="create_journal" href="{{route('create_journal')}}"> إضافة مجلة</a>
 
           </li>
           {{-- <li class="nav-item">

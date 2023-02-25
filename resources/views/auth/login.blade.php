@@ -14,11 +14,11 @@
   <!-- <link rel="stylesheet" href="assets/css/bootstrap-select.less"> -->
   <link rel="stylesheet" href="assets1/scss/style.css">
 
-<section class="property-single nav-arrow-b my-5 bg-dark">
-    <div class="container my-5">
+<section class="property-single nav-arrow-b bg-dark">
+    <div class="container">
         <div class="row">
             <div class="sufee-login d-flex align-content-center flex-wrap">
-                <div class="container my-5 p-2">
+                <div class="container p-2">
                     <div class="login-content">
                         <div class="login-logo">
                             <a href="index.html">

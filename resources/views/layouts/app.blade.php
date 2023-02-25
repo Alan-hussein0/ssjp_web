@@ -37,7 +37,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
   <!-- =======================================================
   * Template Name: EstateAgency - v3.0.0
   * Template URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
