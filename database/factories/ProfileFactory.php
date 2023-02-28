@@ -2,6 +2,8 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
+use Faker\Provider\DateTime;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -16,8 +18,14 @@ class ProfileFactory extends Factory
      */
     public function definition(): array
     {
+        $max = '2000-01-01 12-00-00';
         return [
-            //
+            'photo' => fake()->imageUrl(),
+            'gender' => fake()->boolean(),
+            'phone' => fake()->phoneNumber(),
+            'address' => fake()->address(),
+            'date_of_birth' => DateTime::date('Y-m-d',$max), 
+            'user_id' => User::factory(),
         ];
     }
 }

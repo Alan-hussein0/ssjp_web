@@ -35,6 +35,14 @@ Route::get('/contact',function ()
     return view('frontend.contact');
 })->name('contact');
 
+Route::get('/more', function () {
+    return view('frontend.journal.journal_detail');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

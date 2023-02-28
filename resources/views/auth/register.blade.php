@@ -70,21 +70,21 @@
                     <div class="col-md-6 mb-2">
                         <div class="form-group mt-3">
                             <label class="pb-2" for="bedrooms">الرتبة</label>
-                            <select class="form-control form-select form-control-a" id="bedrooms" name="rank">
-                                <option value="student">طالب</option>
-                                <option value="researcher">باحث</option>
-                                <option value="another">اخر</option>
+                            <select class="form-control form-select form-control-a" id="bedrooms" name="role">
+                                @foreach (\App\Models\Role::all() as $role)
+                                <option value="{{ $role->id }}"> {{ $role->name }} </option>
+                                @endforeach
                             </select>
                         </div>
 
-                        <div class="form-group mt-3">
+                        {{-- <div class="form-group mt-3">
                             <label class="pb-2" for="bedrooms">مجال الاهتمام</label>
                             <select class="form-control form-select form-control-a" id="bedrooms" name="department">
                                 <option value="Business management and accounting">الأعمال، الإدارة والمحاسبة</option>
                                 <option value="nursing">التمريض</option>
                                 <option value="Engineering">الهندسة</option>
                             </select>
-                        </div>
+                        </div> --}}
                     </div>
 
                     <button type="submit" class="btn btn-success btn-flat m-b-30 m-t-30">
